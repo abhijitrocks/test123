@@ -2,20 +2,10 @@
 # Blueprint for deploying the FairShare frontend on Render.com
 
 services:
-  # A static site for the frontend application
   - type: static_site
     name: fairshare-frontend
-    # Specifies the environment. For a Vite/React app, 'static' is appropriate.
-    env: static
-    # The command to build the application. It first installs dependencies
-    # and then runs the build script defined in package.json.
     buildCommand: npm install && npm run build
-    # The directory containing the static files to be served after the build.
-    # Vite's default output directory is 'dist'.
-    staticPublishPath: ./dist
-    # Configuration for handling client-side routing.
-    # This rule ensures that all paths are served the index.html file,
-    # allowing React Router to handle navigation.
+    staticPublishPath: dist
     routes:
       - type: rewrite
         source: /*
