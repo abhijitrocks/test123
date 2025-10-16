@@ -1,0 +1,5 @@
+{
+  "name": "FairShare - Expense Splitter",
+  "description": "A web-based MVP for splitting expenses within groups. Create or join groups, add expenses, and settle debts with a clean, modern interface. All data is stored locally in your browser.",
+  "requestFramePermissions": []
+}
