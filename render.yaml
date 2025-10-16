@@ -3,7 +3,7 @@
 
 services:
   # A static site for the frontend application
-  - type: staticSite
+  - type: static_site
     name: fairshare-frontend
     # Specifies the environment. For a Vite/React app, 'static' is appropriate.
     env: static
